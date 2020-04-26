@@ -2,11 +2,12 @@ CC=gcc
 CFLAGS=-std=gnu99 -pthread -Wall -Werror -pedantic
 RM=rm
 LDLIBS =-lm -lrt
-all: clean main
-main: main.c
-	${CC} -o main ${CFLAGS} main.c ${LDLIBS}
+MAINFILE=main
+all: clean ${MAINFILE}
+${MAINFILE}: ${MAINFILE}.c
+	${CC} -o ${MAINFILE} ${CFLAGS} ${MAINFILE}.c ${LDLIBS}
 .PHONY: clean all
 clean:
-	-${RM} main
+	-${RM} ${MAINFILE}
 debug: clean
-	${CC} -o main ${CFLAGS} -g main.c ${LDLIBS}
+	${CC} -o ${MAINFILE} ${CFLAGS} -g ${MAINFILE}.c ${LDLIBS}
