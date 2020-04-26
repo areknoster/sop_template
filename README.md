@@ -1,6 +1,6 @@
 # sop_template
 1. Clone repository:
-```git clone https://github.com/areknoster/sop_template```
+```git clone https://github.com/areknoster/sop_template.git```
 2. install GDB http://www.gdbtutorial.com/tutorial/how-install-gdb
 3. edit variables on top of tar_and_upload.sh file
 4. to run debugger just hit F5 in VSC
