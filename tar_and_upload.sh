@@ -1,5 +1,5 @@
 #!/bin/bash
-LOGIN=nostera
+LOGIN=your_username
 MAINFILE=main
 
 if test -z "$1"
