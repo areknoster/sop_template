@@ -1,4 +1,6 @@
 # sop_template
+A template I created to save my colleagues some work during the operating-systems laboratories at the university.
+
 1. Clone repository:
 ```git clone https://github.com/areknoster/sop_template.git```
 2. install GDB http://www.gdbtutorial.com/tutorial/how-install-gdb
